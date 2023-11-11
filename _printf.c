@@ -95,6 +95,10 @@ int _printf(const char *format, ...)
 			case '%':
 				percent_func(&r, &i);
 				break;
+			case 0:
+			case '\n':
+				zero_func();
+				break;
 			default:
 				_putchar('%');
 				r++;

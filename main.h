@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-
+int zero_func(void);
 int _printf(const char *format, ...);
 void str_func(char *s, int *j, int *r, int *i);
 void char_func(char c, int *r, int *i);
