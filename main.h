@@ -2,13 +2,17 @@
 #define MAIN_H
 
 #include <stdarg.h>
+#include <limits.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <ctype.h>
 
 int _printf(const char *format, ...);
-void str_func(char *s, int *j, int *r, int *i);
-void char_func(char c, int *r, int *i);
-void percent_func(int *r, int *i);
+int print_format(char spec, va_list args);
+int print_char(int c);
+int print_digit(long n, int base);
+int print_hexa_uppercase(unsigned long n);
+int print_str(char *str);
 
 #endif
