@@ -1,9 +1,11 @@
 #include "main.h"
 
-/*char	_putchar(char c)
-{
-	return(write(1, &c, 1));
-}*/
+/**
+ * printable_chars - differentiate between printable chars
+ * and none-printable chars
+ * @c: checker
+ * Return: 1 if printable, 0 if non-printable
+ */
 
 int	printable_chars(char c)
 {
@@ -12,6 +14,13 @@ int	printable_chars(char c)
 	else
 		return (0);
 }
+
+/**
+ * non_printable_chars - prints printable chars and
+ * escapes non-printable chars in hex format
+ * @s: string
+ * Return: total count of the characters processed
+ */
 
 int	non_printable_chars(char *s)
 {

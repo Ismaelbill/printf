@@ -29,7 +29,7 @@ int print_rev(char *str)
 
 	while (str[r])
 		r++;
-	
+
 	_p_rev(str);
 	putchar('\n');
 	return (r);
