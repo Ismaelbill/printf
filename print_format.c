@@ -29,6 +29,10 @@ int print_format(char spec, va_list args)
 		r += print_digit(va_arg(args, unsigned int), 16);
 	else if (spec == 'X')
 		r += print_hexa_uppercase(va_arg(args, unsigned int));
+	else if (spec == 'S')
+		r += non_printable_chars(va_arg(args, char *));
+	else if (spec == 'r')
+		r += print_rev(va_arg(args, char *));
 	else
 		r += write(1, &spec, 1);
 
