@@ -24,8 +24,10 @@ int print_rev(char *str)
 {
 	int r = 0;
 
-	if (str == NULL)
-		str = "(null)";
+	/*
+	 * if (str == NULL)
+	 *	str = "(null)";
+	*/
 
 	while (str[r])
 		r++;
