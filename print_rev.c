@@ -31,7 +31,6 @@ int print_rev(char *str)
 		r++;
 
 	_p_rev(str);
-	putchar('\n');
 	return (r);
 }
 
