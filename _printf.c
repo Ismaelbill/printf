@@ -1,5 +1,11 @@
 #include "main.h"
 
+
+/**
+ * _printf - function that produces output according to a format
+ * @format: format is a character string.
+ * Return: returns the length of the 'format'
+*/
 int _printf(const char *format, ...)
 {
 	va_list args;

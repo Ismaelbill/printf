@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * print_digit - prints digit on what his base is
+ * @n: number
+ * @base: base of the number
+ * Return: returns the 'n'
+ */
+
 int print_digit(long n, int base)
 {
 	int r = 0;
