@@ -35,6 +35,8 @@ int print_format(char spec, va_list args)
 		r += print_rev(va_arg(args, char *));
 	else if (spec == 'p')
 		r += print_digit(va_arg(args, unsigned long), 16);
+	else if
+		(spec == 'R')
 	else
 		r += write(1, &spec, 1);
 

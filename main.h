@@ -19,5 +19,6 @@ int printable_chars(char c);
 int non_printable_chars(char *s);
 void _p_rev(char *s);
 int print_rev(char *str);
+int print_rot13(va_list args);
 
 #endif
