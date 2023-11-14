@@ -10,7 +10,7 @@ void _p_rev(char *s)
 	if (!s || !*s)
 		return;
 	_p_rev(s + 1);
-	putchar(*s);
+	_putchar(*s);
 }
 
 /**
