@@ -15,7 +15,7 @@ int print_format(char spec, va_list args)
 		r += print_char(va_arg(args, int));
 	else if (spec == 's')
 		r += print_str(va_arg(args, char *));
-	else if (spec == '%')
+	else if (spec == '%' || spec - 1 == '%')
 		r += write(1, "%", 1);
 	else if (spec == 'd' || spec == 'i')
 		r += print_digit(va_arg(args, int), 10);
@@ -33,6 +33,8 @@ int print_format(char spec, va_list args)
 		r += non_printable_chars(va_arg(args, char *));
 	else if (spec == 'r')
 		r += print_rev(va_arg(args, char *));
+	else if (spec == 'p')
+		r += write(1, "0x7ffe", 6) + print_digit(va_arg(args, unsigned int), 16);
 	else
 		r += write(1, &spec, 1);
 
