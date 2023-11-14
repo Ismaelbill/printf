@@ -22,9 +22,12 @@ int	printable_chars(char c)
  * Return: total count of the characters processed
  */
 
-int	non_printable_chars(char *s)
+int non_printable_chars(char *s)
 {
 	int i = 0, r = 0;
+
+	if (s == NULL)
+		s = "(null)";
 
 	while (s[i])
 	{
