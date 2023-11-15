@@ -13,7 +13,7 @@ int main(void)
 	int len2;
 	unsigned int ui;
 	void *addr;
-	char *str = "mweopkwopdkwpofkpokwfopkwfpo pokopewkfopwef";
+	char *str = "mweopkwopdkwpofkpokwfopkwfpo pokopewkfopwef%";
 
 	_printf("This is a test %d string %s with %% %K and a character %c\n", 42, "hello", 'A', 'B');
 	_printf("%");
