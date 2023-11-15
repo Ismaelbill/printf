@@ -38,7 +38,9 @@ int print_format(char spec, va_list args)
 	else if (spec == 'R')
 		r += print_rot13(args);
 	else
+	{
+		r += write(1, "%", 1);
 		r += write(1, &spec, 1);
-
+	}
 	return (r);
 }

@@ -15,6 +15,8 @@ int main(void)
 	void *addr;
 	char *str = "mweopkwopdkwpofkpokwfopkwfpo pokopewkfopwef";
 
+	_printf("This is a test %d string %s with %% %K and a character %c\n", 42, "hello", 'A', 'B');
+	_printf("%");
 	len = _printf("Let's try to printf a simple sentence.\n");
 	len2 = printf("Let's try to printf a simple sentence.\n");
 	ui = (unsigned int)INT_MAX + 1024;
