@@ -42,7 +42,7 @@ To install and use the custom `printf` function, follow these steps:
 ## Usage
 
 To use the custom `printf` function in your projects, include the `main.h` header file and compile your code with the `printf` implementation files. Here is an example:
-    ```c
+```c
     #include "main.h"
 
     int main(void)
@@ -50,15 +50,15 @@ To use the custom `printf` function in your projects, include the `main.h` heade
         _printf("Hello, world!\n");
         return (0);
     }
-    ```
+```
 Run the compiled executable:
-    ```sh
+```sh
     ./printf
-    ```
+```
 
 ## Supported Formats
 
-- The custom printf function supports the following format specifiers:
+The custom printf function supports the following format specifiers:
   - %c: Character
   - %s: String
   - %d: Signed decimal integer
