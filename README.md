@@ -9,8 +9,6 @@ A custom implementation of the C standard library function `printf`.
 - [Installation](#installation)
 - [Usage](#usage)
 - [Supported Formats](#supported-formats)
-- [Contributing](#contributing)
-- [License](#license)
 - [Acknowledgements](#acknowledgements)
 
 ## Introduction
